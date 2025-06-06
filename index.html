@@ -268,29 +268,49 @@
 
     <!-- Certifications -->
     <section class="mb-12 animate-slide-up">
-      <div class="flex items-center mb-6">
-        <div class="bg-accent w-1 h-8 mr-4 rounded-full"></div>
-        <h2 class="text-3xl font-bold text-primary">Certifications</h2>
-      </div>
-      
-      <div class="bg-gradient-to-r from-light to-white rounded-xl shadow-md p-6 border border-gray-100">
-        <div class="flex flex-col md:flex-row items-center">
-          <div class="bg-white p-4 rounded-full shadow-md mb-4 md:mb-0 md:mr-6">
-            <i class="fas fa-certificate text-accent text-4xl"></i>
+    <div class="flex items-center mb-6">
+      <div class="bg-accent w-1 h-8 mr-4 rounded-full"></div>
+      <h2 class="text-3xl font-bold text-primary">Certifications</h2>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Developer Certification -->
+      <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+        <div class="flex items-start">
+          <div class="bg-white p-3 rounded-full shadow-md mr-4">
+            <i class="fas fa-code text-accent text-2xl"></i>
           </div>
           <div class="flex-1">
-            <h3 class="text-2xl font-bold text-primary mb-2">MuleSoft Certified Developer</h3>
-            <p class="text-gray-600 mb-4">Validated expertise in designing, building, and managing APIs and integrations using MuleSoft's Anypoint Platform</p>
+            <h3 class="text-xl font-bold text-primary mb-1">MuleSoft Certified Developer - Level 1</h3>
+            <p class="text-gray-600 mb-4">Validated expertise in building Mule applications and APIs</p>
             
-            <!-- Clickable certificate image -->
-            <div class="mt-4 cursor-pointer transform hover:scale-105 transition-transform duration-300" id="certificateImage">
-              <img src="Mulesoft Cert.png" alt="MuleSoft Developer I Certification" class="w-64 h-auto rounded-lg shadow-md border border-gray-200">
-              <p class="text-sm text-gray-500 mt-2 text-center">Click to view full certificate</p>
+            <div class="mt-4 cursor-pointer transform hover:scale-105 transition-transform duration-300 certificate-thumbnail">
+              <img src="Mulesoft Cert.png" alt="MuleSoft Developer Certification" class="w-full h-auto rounded-lg shadow-md border border-gray-200">
+              <p class="text-sm text-gray-500 mt-2 text-center">Click to view certificate</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      
+      <!-- Architect Certification -->
+      <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+        <div class="flex items-start">
+          <div class="bg-white p-3 rounded-full shadow-md mr-4">
+            <i class="fas fa-project-diagram text-accent text-2xl"></i>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-bold text-primary mb-1">MuleSoft Certified Architect - Level 1</h3>
+            <p class="text-gray-600 mb-4">Validated expertise in designing integration solutions</p>
+            
+            <div class="mt-4 cursor-pointer transform hover:scale-105 transition-transform duration-300 certificate-thumbnail">
+              <img src="Mulesoft Cert.png" alt="MuleSoft Architect Certification" class="w-full h-auto rounded-lg shadow-md border border-gray-200">
+              <p class="text-sm text-gray-500 mt-2 text-center">Click to view certificate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- Professional Experience -->
     <section class="mb-12 animate-slide-up">
@@ -526,98 +546,108 @@
 
     <!-- Education -->
     <section class="mb-12 animate-slide-up">
-      <div class="flex items-center mb-6">
-        <div class="bg-accent w-1 h-8 mr-4 rounded-full"></div>
-        <h2 class="text-3xl font-bold text-primary">Education</h2>
-      </div>
-      
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
-          <div class="flex items-start">
-            <div class="bg-accent bg-opacity-10 p-3 rounded-lg mr-4">
-              <i class="fas fa-graduation-cap text-accent text-xl"></i>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold text-primary mb-1">Master's in Computer Science</h3>
-              <p class="text-secondary">Campbellsville University, California, USA</p>
-            </div>
+    <div class="flex items-center mb-6">
+      <div class="bg-accent w-1 h-8 mr-4 rounded-full"></div>
+      <h2 class="text-3xl font-bold text-primary">Education</h2>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Masters 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <div class="bg-primary p-4">
+          <h3 class="text-lg font-semibold text-white">Master of Science</h3>
+          <p class="text-accent text-sm">Information Technology Management</p>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center mb-3">
+            <i class="fas fa-university text-accent mr-2"></i>
+            <span class="font-medium">Campbellsville University</span>
           </div>
-          
-          <div class="flex items-start">
-            <div class="bg-accent bg-opacity-10 p-3 rounded-lg mr-4">
-              <i class="fas fa-university text-accent text-xl"></i>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold text-primary mb-1">Bachelor's in Engineering (CS)</h3>
-              <p class="text-secondary">JNTU, India</p>
-            </div>
-          </div>
+          <p class="text-gray-600 text-sm">California, USA</p>
         </div>
       </div>
-    </section>
+      
+      <!-- Masters 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <div class="bg-primary p-4">
+          <h3 class="text-lg font-semibold text-white">Master of Science</h3>
+          <p class="text-accent text-sm">Computer Science</p>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center mb-3">
+            <i class="fas fa-university text-accent mr-2"></i>
+            <span class="font-medium">SVU University</span>
+          </div>
+          <p class="text-gray-600 text-sm">India</p>
+        </div>
+      </div>
+      
+      <!-- Bachelors -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <div class="bg-primary p-4">
+          <h3 class="text-lg font-semibold text-white">Bachelor of Technology</h3>
+          <p class="text-accent text-sm">Computer Science</p>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center mb-3">
+            <i class="fas fa-university text-accent mr-2"></i>
+            <span class="font-medium">JNTU</span>
+          </div>
+          <p class="text-gray-600 text-sm">India</p>
+        </div>
+      </div>
+    </div>
+  </section>
   </main>
 
   <!-- Certificate Modal -->
   <div id="certificateModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
     <div class="bg-white p-4 rounded-lg max-w-4xl mx-4">
       <div class="flex justify-between items-center mb-4">
-        <h3 class="text-xl font-bold text-primary">MuleSoft Certification</h3>
+        <h3 class="text-xl font-bold text-primary" id="modalTitle">Certificate</h3>
         <button id="closeModal" class="text-gray-500 hover:text-gray-700">
           <i class="fas fa-times text-2xl"></i>
         </button>
       </div>
-      <img id="modalImage" src="Mulesoft Cert.png" alt="MuleSoft Certification" class="max-w-full max-h-[80vh] mx-auto">
+      <img id="modalImage" src="" alt="Certificate" class="max-w-full max-h-[80vh] mx-auto">
     </div>
   </div>
 
-  <footer class="bg-primary text-white py-6">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <p class="mb-4 md:mb-0">&copy; 2025 Nagarjuna N. All rights reserved.</p>
-        <div class="flex space-x-4">
-          <a href="mailto:mqatnag@gmail.com" class="hover:text-accent transition-colors">
-            <i class="fas fa-envelope text-xl"></i>
-          </a>
-          <a href="https://linkedin.com/in/nag-n-7b1346207" target="_blank" class="hover:text-accent transition-colors">
-            <i class="fab fa-linkedin-in text-xl"></i>
-          </a>
-          <a href="tel:+12488320121" class="hover:text-accent transition-colors">
-            <i class="fas fa-phone text-xl"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+  <!-- Updated JavaScript -->
   <script>
-    // Certificate modal functionality
-    const certificateImage = document.getElementById('certificateImage');
-    const certificateModal = document.getElementById('certificateModal');
-    const modalImage = document.getElementById('modalImage');
-    const closeModal = document.getElementById('closeModal');
-
-    certificateImage.addEventListener('click', () => {
-      certificateModal.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
+    // Certificate modal functionality for multiple certificates
+    document.querySelectorAll('.certificate-thumbnail').forEach(thumb => {
+      thumb.addEventListener('click', function() {
+        const img = this.querySelector('img');
+        const title = this.closest('.flex-1').querySelector('h3').textContent;
+        
+        document.getElementById('modalImage').src = img.src;
+        document.getElementById('modalImage').alt = img.alt;
+        document.getElementById('modalTitle').textContent = title;
+        
+        document.getElementById('certificateModal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      });
     });
 
-    closeModal.addEventListener('click', () => {
-      certificateModal.classList.add('hidden');
+    // Close modal
+    document.getElementById('closeModal').addEventListener('click', () => {
+      document.getElementById('certificateModal').classList.add('hidden');
       document.body.style.overflow = '';
     });
 
-    // Close modal when clicking outside the image
-    certificateModal.addEventListener('click', (e) => {
-      if (e.target === certificateModal) {
-        certificateModal.classList.add('hidden');
+    // Close modal when clicking outside
+    document.getElementById('certificateModal').addEventListener('click', (e) => {
+      if (e.target === document.getElementById('certificateModal')) {
+        document.getElementById('certificateModal').classList.add('hidden');
         document.body.style.overflow = '';
       }
     });
 
-    // Close modal with ESC key
+    // Close with ESC key
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !certificateModal.classList.contains('hidden')) {
-        certificateModal.classList.add('hidden');
+      if (e.key === 'Escape' && !document.getElementById('certificateModal').classList.contains('hidden')) {
+        document.getElementById('certificateModal').classList.add('hidden');
         document.body.style.overflow = '';
       }
     });
