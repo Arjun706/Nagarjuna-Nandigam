@@ -1,65 +1,626 @@
-<!-- Add this modal component just before </body> -->
-<div id="certificateModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
-  <div class="bg-white p-4 rounded-lg max-w-4xl mx-4">
-    <div class="flex justify-between items-center mb-4">
-      <h3 class="text-xl font-bold text-primary">MuleSoft Certification</h3>
-      <button id="closeModal" class="text-gray-500 hover:text-gray-700">
-        <i class="fas fa-times text-2xl"></i>
-      </button>
-    </div>
-    <img id="modalImage" src="Mulesoft Cert.png" alt="MuleSoft Certification" class="max-w-full max-h-[80vh] mx-auto">
-  </div>
-</div>
-
-<!-- Modify the Certifications section like this: -->
-<section class="mb-12 animate-slide-up">
-  <div class="flex items-center mb-6">
-    <div class="bg-accent w-1 h-8 mr-4 rounded-full"></div>
-    <h2 class="text-3xl font-bold text-primary">Certifications</h2>
-  </div>
-  
-  <div class="bg-gradient-to-r from-light to-white rounded-xl shadow-md p-6 border border-gray-100">
-    <div class="flex flex-col md:flex-row items-center">
-      <div class="bg-white p-4 rounded-full shadow-md mb-4 md:mb-0 md:mr-6">
-        <i class="fas fa-certificate text-accent text-4xl"></i>
-      </div>
-      <div class="flex-1">
-        <h3 class="text-2xl font-bold text-primary mb-2">MuleSoft Certified Developer</h3>
-        <p class="text-gray-600 mb-4">Validated expertise in designing, building, and managing APIs and integrations using MuleSoft's Anypoint Platform</p>
-        
-        <!-- Add the clickable certificate image -->
-        <div class="mt-4 cursor-pointer transform hover:scale-105 transition-transform duration-300" id="certificateImage">
-          <img src="Mulesoft Cert.png" alt="MuleSoft Developer I Certification" class="w-64 h-auto rounded-lg shadow-md border border-gray-200">
-          <p class="text-sm text-gray-500 mt-2 text-center">Click to view full certificate</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nagarjuna N | Senior MuleSoft Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1a365d',
+            secondary: '#2c5282',
+            accent: '#4299e1',
+            light: '#ebf8ff',
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in-out',
+            'slide-up': 'slideUp 0.5s ease-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(20px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .skill-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .timeline-item:not(:last-child):after {
+      content: '';
+      position: absolute;
+      left: 16px;
+      top: 32px;
+      height: calc(100% - 32px);
+      width: 2px;
+      background: #4299e1;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-gradient-to-r from-primary to-secondary text-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="mr-8 mb-6 md:mb-0 transform hover:scale-105 transition-transform duration-300">
+          <div class="w-40 h-40 rounded-full border-4 border-white shadow-xl overflow-hidden">
+            <img src="profile-picture.jpg" alt="Nagarjuna N Profile Picture" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="flex-1">
+          <h1 class="text-4xl font-bold mb-2 animate-fade-in">Nagarjuna N</h1>
+          <h2 class="text-2xl font-semibold text-accent mb-6 animate-fade-in">Senior MuleSoft Developer</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="flex items-center">
+              <div class="bg-accent rounded-full p-2 mr-3">
+                <i class="fas fa-envelope text-white text-sm"></i>
+              </div>
+              <a href="mailto:mqatnag@gmail.com" class="hover:text-accent transition-colors">mqatnag@gmail.com</a>
+            </div>
+            <div class="flex items-center">
+              <div class="bg-accent rounded-full p-2 mr-3">
+                <i class="fas fa-phone text-white text-sm"></i>
+              </div>
+              <span>+1 248-832-0121</span>
+            </div>
+            <div class="flex items-center">
+              <div class="bg-accent rounded-full p-2 mr-3">
+                <i class="fab fa-linkedin-in text-white text-sm"></i>
+              </div>
+              <a href="https://linkedin.com/in/nag-n-7b1346207" target="_blank" class="hover:text-accent transition-colors">linkedin.com/in/nag-n</a>
+            </div>
+            <div class="flex items-center">
+              <div class="bg-accent rounded-full p-2 mr-3">
+                <i class="fas fa-map-marker-alt text-white text-sm"></i>
+              </div>
+              <span>United States</span>
+            </div>
+          </div>
+          
+          <a href="Nagarjuna_Mulesoft.docx" download class="inline-flex items-center px-6 py-3 bg-accent hover:bg-blue-600 text-white font-medium rounded-lg transition-all duration-300 shadow-md hover:shadow-lg">
+            <i class="fas fa-download mr-2"></i> Download Resume
+          </a>
         </div>
       </div>
     </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-8">
+    <!-- Professional Summary -->
+    <section class="mb-12 animate-slide-up">
+      <div class="flex items-center mb-6">
+        <div class="bg-accent w-1 h-8 mr-4 rounded-full"></div>
+        <h2 class="text-3xl font-bold text-primary">Professional Summary</h2>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-accent">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="flex items-start">
+            <div class="text-accent mr-3 mt-1">
+              <i class="fas fa-award"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg text-primary mb-1">10+ Years Experience</h3>
+              <p class="text-gray-600">Professional IT experience with <span class="font-medium">6+ years</span> in ESB projects using MuleSoft</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="text-accent mr-3 mt-1">
+              <i class="fas fa-code"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg text-primary mb-1">Technical Expertise</h3>
+              <p class="text-gray-600">Mule 3.x to 4.x, CloudHub/RTF deployments, and API-led connectivity</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="text-accent mr-3 mt-1">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg text-primary mb-1">Integration Specialist</h3>
+              <p class="text-gray-600">MuleSoft connectors (SFDC, Database, JMS, SFTP) and DataWeave transformations</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="text-accent mr-3 mt-1">
+              <i class="fas fa-server"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg text-primary mb-1">DevOps Practice</h3>
+              <p class="text-gray-600">CI/CD pipelines using Jenkins, Maven, GitHub, and production troubleshooting</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="mb-12 animate-slide-up">
+      <div class="flex items-center mb-6">
+        <div class="bg-accent w-1 h-8 mr-4 rounded-full"></div>
+        <h2 class="text-3xl font-bold text-primary">Technical Skills</h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- MuleSoft Card -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div class="bg-primary p-4">
+            <h3 class="text-xl font-semibold text-white">MuleSoft Technologies</h3>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>Anypoint Studio 3.x/4.x</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>Mule ESB 3.6-4.x</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>CloudHub, RTF, MMC</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>API Manager, API Gateway</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>RAML, DataWeave</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>MUnit, Maven</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Programming Card -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div class="bg-primary p-4">
+            <h3 class="text-xl font-semibold text-white">Programming & Databases</h3>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>Java, C++, SQL, PL/SQL</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>Spring, Hibernate</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>Oracle, MySQL, MSSQL</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>JDBC, JMS, EJB</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>HTML, XML, CSS</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Tools Card -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div class="bg-primary p-4">
+            <h3 class="text-xl font-semibold text-white">Tools & Platforms</h3>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>Jenkins, GitHub, Maven</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>Docker, Kubernetes</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>WebLogic, WebSphere</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>Eclipse, NetBeans</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>Postman, SoapUI</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                <span>Splunk, JIRA</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="mb-12 animate-slide-up">
+      <div class="flex items-center mb-6">
+        <div class="bg-accent w-1 h-8 mr-4 rounded-full"></div>
+        <h2 class="text-3xl font-bold text-primary">Certifications</h2>
+      </div>
+      
+      <div class="bg-gradient-to-r from-light to-white rounded-xl shadow-md p-6 border border-gray-100">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="bg-white p-4 rounded-full shadow-md mb-4 md:mb-0 md:mr-6">
+            <i class="fas fa-certificate text-accent text-4xl"></i>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-primary mb-2">MuleSoft Certified Developer</h3>
+            <p class="text-gray-600 mb-4">Validated expertise in designing, building, and managing APIs and integrations using MuleSoft's Anypoint Platform</p>
+            
+            <!-- Clickable certificate image -->
+            <div class="mt-4 cursor-pointer transform hover:scale-105 transition-transform duration-300" id="certificateImage">
+              <img src="Mulesoft Cert.png" alt="MuleSoft Developer I Certification" class="w-64 h-auto rounded-lg shadow-md border border-gray-200">
+              <p class="text-sm text-gray-500 mt-2 text-center">Click to view full certificate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="mb-12 animate-slide-up">
+      <div class="flex items-center mb-6">
+        <div class="bg-accent w-1 h-8 mr-4 rounded-full"></div>
+        <h2 class="text-3xl font-bold text-primary">Professional Experience</h2>
+      </div>
+      
+      <div class="space-y-8">
+        <!-- Experience 1 -->
+        <div class="relative timeline-item pl-10">
+          <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+              <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                <h3 class="text-xl font-bold text-primary">Senior MuleSoft Integration Consultant</h3>
+                <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Apr 2021 - Present</span>
+              </div>
+              <p class="text-secondary font-medium">IBM/Marriott, Orlando, FL</p>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Led MuleSoft implementations for Marriott's global reservation system, integrating Salesforce, SAP, and payment gateways</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Migrated 50+ Mule 3.x applications to Mule 4.x, improving performance by 40% and reducing cloud costs</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Developed MuleSoft CICS Connector solutions for IBM Mainframe integration</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Implemented CI/CD pipelines using Jenkins and Maven for CloudHub/RTF deployments</span>
+                </li>
+              </ul>
+              
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 4.x</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">CloudHub</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">RTF</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">CICS</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Jenkins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience 2 -->
+        <div class="relative timeline-item pl-10">
+          <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+              <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                <h3 class="text-xl font-bold text-primary">Senior MuleSoft Integration Consultant</h3>
+                <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Mar 2020 - Apr 2021</span>
+              </div>
+              <p class="text-secondary font-medium">Ameren, St. Louis, MO</p>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Implemented Mule 4.2.2 solutions integrating SAP, Salesforce, and REST/SOAP web services</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Developed RAML-based REST APIs using API Kit Router and secured with OAuth 2.0</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Created complex DataWeave transformations for EDI and XML payload conversions</span>
+                </li>
+              </ul>
+              
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 4.2</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">RAML</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">OAuth</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">SAP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience 3 -->
+        <div class="relative timeline-item pl-10">
+          <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+              <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                <h3 class="text-xl font-bold text-primary">Senior MuleSoft Developer</h3>
+                <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Jan 2018 - Feb 2020</span>
+              </div>
+              <p class="text-secondary font-medium">Bank of America, Pennington, NJ</p>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Upgraded APIs/flows from Mule 3.9 to 4.1.5 and implemented hybrid deployments</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Developed integration workflows using Salesforce, HTTP, JMS, and Database connectors</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Implemented API security with HTTPS, OAuth 2.0, Okta, and SAML configurations</span>
+                </li>
+              </ul>
+              
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 3.9/4.1</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Salesforce</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">MUnit</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">JMeter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience 4 -->
+        <div class="relative timeline-item pl-10">
+          <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+              <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                <h3 class="text-xl font-bold text-primary">Senior MuleSoft Developer</h3>
+                <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Sep 2016 - Dec 2017</span>
+              </div>
+              <p class="text-secondary font-medium">Plymouth Rock Assurance, Woodbridge, NJ</p>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Integrated Guidewire PolicyCenter, BillingCenter, and ClaimCenter with internal/external systems</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Migrated ETL DataStage Jobs to Mule ESB and deprecated Data Mapper to DataWeave</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Developed RESTful web services using CXF API and SOAP UI testing</span>
+                </li>
+              </ul>
+              
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 3.7/3.8</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Guidewire</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">DataWeave</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Jenkins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience 5 -->
+        <div class="relative timeline-item pl-10">
+          <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+              <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                <h3 class="text-xl font-bold text-primary">Java/MuleSoft Developer</h3>
+                <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Sep 2015 - Sep 2016</span>
+              </div>
+              <p class="text-secondary font-medium">Johnson & Johnson, New Brunswick, NJ</p>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Developed Mule ESB 3.7.3/3.8.3 solutions integrating SAP and Salesforce</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Used API Designer to design, build, test, and manage APIs through Anypoint Platform</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Implemented CloudHub connector for exception alerts and failed record recovery</span>
+                </li>
+              </ul>
+              
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 3.7/3.8</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">SAP</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Log4J</span>
+                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">CloudHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="mb-12 animate-slide-up">
+      <div class="flex items-center mb-6">
+        <div class="bg-accent w-1 h-8 mr-4 rounded-full"></div>
+        <h2 class="text-3xl font-bold text-primary">Education</h2>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+          <div class="flex items-start">
+            <div class="bg-accent bg-opacity-10 p-3 rounded-lg mr-4">
+              <i class="fas fa-graduation-cap text-accent text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-primary mb-1">Master's in Computer Science</h3>
+              <p class="text-secondary">Campbellsville University, California, USA</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="bg-accent bg-opacity-10 p-3 rounded-lg mr-4">
+              <i class="fas fa-university text-accent text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-primary mb-1">Bachelor's in Engineering (CS)</h3>
+              <p class="text-secondary">JNTU, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Certificate Modal -->
+  <div id="certificateModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+    <div class="bg-white p-4 rounded-lg max-w-4xl mx-4">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-xl font-bold text-primary">MuleSoft Certification</h3>
+        <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times text-2xl"></i>
+        </button>
+      </div>
+      <img id="modalImage" src="Mulesoft Cert.png" alt="MuleSoft Certification" class="max-w-full max-h-[80vh] mx-auto">
+    </div>
   </div>
-</section>
 
-<!-- Add this script at the end of your body -->
-<script>
-  // Certificate modal functionality
-  const certificateImage = document.getElementById('certificateImage');
-  const certificateModal = document.getElementById('certificateModal');
-  const modalImage = document.getElementById('modalImage');
-  const closeModal = document.getElementById('closeModal');
+  <footer class="bg-primary text-white py-6">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="mb-4 md:mb-0">&copy; 2025 Nagarjuna N. All rights reserved.</p>
+        <div class="flex space-x-4">
+          <a href="mailto:mqatnag@gmail.com" class="hover:text-accent transition-colors">
+            <i class="fas fa-envelope text-xl"></i>
+          </a>
+          <a href="https://linkedin.com/in/nag-n-7b1346207" target="_blank" class="hover:text-accent transition-colors">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+          <a href="tel:+12488320121" class="hover:text-accent transition-colors">
+            <i class="fas fa-phone text-xl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  certificateImage.addEventListener('click', () => {
-    certificateModal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
-  });
+  <script>
+    // Certificate modal functionality
+    const certificateImage = document.getElementById('certificateImage');
+    const certificateModal = document.getElementById('certificateModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeModal = document.getElementById('closeModal');
 
-  closeModal.addEventListener('click', () => {
-    certificateModal.classList.add('hidden');
-    document.body.style.overflow = ''; // Re-enable scrolling
-  });
+    certificateImage.addEventListener('click', () => {
+      certificateModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    });
 
-  // Close modal when clicking outside the image
-  certificateModal.addEventListener('click', (e) => {
-    if (e.target === certificateModal) {
+    closeModal.addEventListener('click', () => {
       certificateModal.classList.add('hidden');
       document.body.style.overflow = '';
-    }
-  });
-</script>
+    });
+
+    // Close modal when clicking outside the image
+    certificateModal.addEventListener('click', (e) => {
+      if (e.target === certificateModal) {
+        certificateModal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Close modal with ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !certificateModal.classList.contains('hidden')) {
+        certificateModal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
+</body>
+</html>
