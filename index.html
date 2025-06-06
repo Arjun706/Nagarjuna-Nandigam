@@ -314,24 +314,32 @@
 
     <!-- Professional Experience -->
     <section class="mb-12 animate-slide-up">
-      <div class="flex items-center mb-6">
-        <div class="bg-accent w-1 h-8 mr-4 rounded-full"></div>
-        <h2 class="text-3xl font-bold text-primary">Professional Experience</h2>
-      </div>
-      
-      <div class="space-y-8">
-        <!-- Experience 1 -->
-        <div class="relative timeline-item pl-10">
-          <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
-          <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
-              <div class="flex flex-col md:flex-row md:justify-between md:items-center">
-                <h3 class="text-xl font-bold text-primary">Senior MuleSoft Integration Consultant</h3>
-                <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Apr 2021 - Present</span>
-              </div>
-              <p class="text-secondary font-medium">IBM/Marriott, Orlando, FL</p>
+    <div class="flex items-center mb-6">
+      <div class="bg-accent w-1 h-8 mr-4 rounded-full"></div>
+      <h2 class="text-3xl font-bold text-primary">Professional Experience</h2>
+    </div>
+    
+    <div class="space-y-8">
+      <!-- Experience 1 - IBM/Marriott -->
+      <div class="relative timeline-item pl-10">
+        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+              <h3 class="text-xl font-bold text-primary">Senior MuleSoft Integration Consultant</h3>
+              <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Apr 2021 - Present</span>
             </div>
-            <div class="p-6">
+            <p class="text-secondary font-medium">IBM/Marriott, Orlando, FL</p>
+          </div>
+          <div class="p-6">
+            <div class="mb-4">
+              <button class="toggle-responsibilities flex items-center text-accent hover:text-blue-600 transition-colors">
+                <span class="font-medium">View Responsibilities</span>
+                <i class="fas fa-chevron-down ml-2 text-sm"></i>
+              </button>
+            </div>
+            
+            <div class="responsibilities hidden space-y-3">
               <ul class="space-y-3">
                 <li class="flex">
                   <div class="text-accent mr-3 mt-1">
@@ -357,31 +365,54 @@
                   </div>
                   <span>Implemented CI/CD pipelines using Jenkins and Maven for CloudHub/RTF deployments</span>
                 </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Designed and configured RTF clusters for optimal performance, load balancing, and failover capabilities</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Utilized Docker and Kubernetes to containerize and orchestrate Mule applications</span>
+                </li>
               </ul>
-              
-              <div class="mt-6 flex flex-wrap gap-2">
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 4.x</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">CloudHub</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">RTF</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">CICS</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Jenkins</span>
-              </div>
+            </div>
+            
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 4.x</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">CloudHub</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">RTF</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">CICS</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Jenkins</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Docker</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Kubernetes</span>
             </div>
           </div>
         </div>
-        
-        <!-- Experience 2 -->
-        <div class="relative timeline-item pl-10">
-          <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
-          <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
-              <div class="flex flex-col md:flex-row md:justify-between md:items-center">
-                <h3 class="text-xl font-bold text-primary">Senior MuleSoft Integration Consultant</h3>
-                <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Mar 2020 - Apr 2021</span>
-              </div>
-              <p class="text-secondary font-medium">Ameren, St. Louis, MO</p>
+      </div>
+      
+      <!-- Experience 2 - Ameren -->
+      <div class="relative timeline-item pl-10">
+        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+              <h3 class="text-xl font-bold text-primary">Senior MuleSoft Integration Consultant</h3>
+              <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Mar 2020 - Apr 2021</span>
             </div>
-            <div class="p-6">
+            <p class="text-secondary font-medium">Ameren, St. Louis, MO</p>
+          </div>
+          <div class="p-6">
+            <div class="mb-4">
+              <button class="toggle-responsibilities flex items-center text-accent hover:text-blue-600 transition-colors">
+                <span class="font-medium">View Responsibilities</span>
+                <i class="fas fa-chevron-down ml-2 text-sm"></i>
+              </button>
+            </div>
+            
+            <div class="responsibilities hidden space-y-3">
               <ul class="space-y-3">
                 <li class="flex">
                   <div class="text-accent mr-3 mt-1">
@@ -401,30 +432,53 @@
                   </div>
                   <span>Created complex DataWeave transformations for EDI and XML payload conversions</span>
                 </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Designed and developed enterprise services using RAML and REST based APIs</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Implemented SSL configuration for secured transmission of messages</span>
+                </li>
               </ul>
-              
-              <div class="mt-6 flex flex-wrap gap-2">
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 4.2</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">RAML</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">OAuth</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">SAP</span>
-              </div>
+            </div>
+            
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 4.2</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">RAML</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">OAuth</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">SAP</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Salesforce</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">DataWeave</span>
             </div>
           </div>
         </div>
-        
-        <!-- Experience 3 -->
-        <div class="relative timeline-item pl-10">
-          <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
-          <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
-              <div class="flex flex-col md:flex-row md:justify-between md:items-center">
-                <h3 class="text-xl font-bold text-primary">Senior MuleSoft Developer</h3>
-                <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Jan 2018 - Feb 2020</span>
-              </div>
-              <p class="text-secondary font-medium">Bank of America, Pennington, NJ</p>
+      </div>
+      
+      <!-- Experience 3 - Bank of America -->
+      <div class="relative timeline-item pl-10">
+        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+              <h3 class="text-xl font-bold text-primary">Senior MuleSoft Developer</h3>
+              <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Jan 2018 - Feb 2020</span>
             </div>
-            <div class="p-6">
+            <p class="text-secondary font-medium">Bank of America, Pennington, NJ</p>
+          </div>
+          <div class="p-6">
+            <div class="mb-4">
+              <button class="toggle-responsibilities flex items-center text-accent hover:text-blue-600 transition-colors">
+                <span class="font-medium">View Responsibilities</span>
+                <i class="fas fa-chevron-down ml-2 text-sm"></i>
+              </button>
+            </div>
+            
+            <div class="responsibilities hidden space-y-3">
               <ul class="space-y-3">
                 <li class="flex">
                   <div class="text-accent mr-3 mt-1">
@@ -444,30 +498,53 @@
                   </div>
                   <span>Implemented API security with HTTPS, OAuth 2.0, Okta, and SAML configurations</span>
                 </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Implemented multi-region deployment strategies for disaster recovery and high availability</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Implemented automated MUnit tests with 80%+ code coverage for all deliverables</span>
+                </li>
               </ul>
-              
-              <div class="mt-6 flex flex-wrap gap-2">
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 3.9/4.1</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Salesforce</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">MUnit</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">JMeter</span>
-              </div>
+            </div>
+            
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 3.9/4.1</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Salesforce</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">MUnit</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">JMeter</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">OAuth</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">SAML</span>
             </div>
           </div>
         </div>
-        
-        <!-- Experience 4 -->
-        <div class="relative timeline-item pl-10">
-          <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
-          <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
-              <div class="flex flex-col md:flex-row md:justify-between md:items-center">
-                <h3 class="text-xl font-bold text-primary">Senior MuleSoft Developer</h3>
-                <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Sep 2016 - Dec 2017</span>
-              </div>
-              <p class="text-secondary font-medium">Plymouth Rock Assurance, Woodbridge, NJ</p>
+      </div>
+      
+      <!-- Experience 4 - Plymouth Rock Assurance -->
+      <div class="relative timeline-item pl-10">
+        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+              <h3 class="text-xl font-bold text-primary">Senior MuleSoft Developer</h3>
+              <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Sep 2016 - Dec 2017</span>
             </div>
-            <div class="p-6">
+            <p class="text-secondary font-medium">Plymouth Rock Assurance, Woodbridge, NJ</p>
+          </div>
+          <div class="p-6">
+            <div class="mb-4">
+              <button class="toggle-responsibilities flex items-center text-accent hover:text-blue-600 transition-colors">
+                <span class="font-medium">View Responsibilities</span>
+                <i class="fas fa-chevron-down ml-2 text-sm"></i>
+              </button>
+            </div>
+            
+            <div class="responsibilities hidden space-y-3">
               <ul class="space-y-3">
                 <li class="flex">
                   <div class="text-accent mr-3 mt-1">
@@ -487,30 +564,53 @@
                   </div>
                   <span>Developed RESTful web services using CXF API and SOAP UI testing</span>
                 </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Designed and developed enterprise services using RAML and REST based APIs</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Implemented CI/CD process using Bitbucket, Jenkins and U-deploy</span>
+                </li>
               </ul>
-              
-              <div class="mt-6 flex flex-wrap gap-2">
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 3.7/3.8</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Guidewire</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">DataWeave</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Jenkins</span>
-              </div>
+            </div>
+            
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 3.7/3.8</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Guidewire</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">DataWeave</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Jenkins</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">RAML</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">CXF</span>
             </div>
           </div>
         </div>
-        
-        <!-- Experience 5 -->
-        <div class="relative timeline-item pl-10">
-          <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
-          <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
-              <div class="flex flex-col md:flex-row md:justify-between md:items-center">
-                <h3 class="text-xl font-bold text-primary">Java/MuleSoft Developer</h3>
-                <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Sep 2015 - Sep 2016</span>
-              </div>
-              <p class="text-secondary font-medium">Johnson & Johnson, New Brunswick, NJ</p>
+      </div>
+      
+      <!-- Experience 5 - Johnson & Johnson -->
+      <div class="relative timeline-item pl-10">
+        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+              <h3 class="text-xl font-bold text-primary">Java/MuleSoft Developer</h3>
+              <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">Sep 2015 - Sep 2016</span>
             </div>
-            <div class="p-6">
+            <p class="text-secondary font-medium">Johnson & Johnson, New Brunswick, NJ</p>
+          </div>
+          <div class="p-6">
+            <div class="mb-4">
+              <button class="toggle-responsibilities flex items-center text-accent hover:text-blue-600 transition-colors">
+                <span class="font-medium">View Responsibilities</span>
+                <i class="fas fa-chevron-down ml-2 text-sm"></i>
+              </button>
+            </div>
+            
+            <div class="responsibilities hidden space-y-3">
               <ul class="space-y-3">
                 <li class="flex">
                   <div class="text-accent mr-3 mt-1">
@@ -530,19 +630,100 @@
                   </div>
                   <span>Implemented CloudHub connector for exception alerts and failed record recovery</span>
                 </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Developed interfaces between SAP, Salesforce, REST and SOAP web-services</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Designed and implemented RESTful Web Services using JSON and XML</span>
+                </li>
               </ul>
-              
-              <div class="mt-6 flex flex-wrap gap-2">
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 3.7/3.8</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">SAP</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Log4J</span>
-                <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">CloudHub</span>
-              </div>
+            </div>
+            
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Mule 3.7/3.8</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">SAP</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Log4J</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">CloudHub</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Salesforce</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">REST</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      
+      <!-- Experience 6 - Evoke Technologies -->
+      <div class="relative timeline-item pl-10">
+        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-accent border-4 border-light z-10"></div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+              <h3 class="text-xl font-bold text-primary">Java Developer</h3>
+              <span class="inline-block mt-2 md:mt-0 px-3 py-1 bg-accent text-white rounded-full text-sm font-medium">May 2012 - Apr 2015</span>
+            </div>
+            <p class="text-secondary font-medium">Evoke Technologies, Hyderabad, India</p>
+          </div>
+          <div class="p-6">
+            <div class="mb-4">
+              <button class="toggle-responsibilities flex items-center text-accent hover:text-blue-600 transition-colors">
+                <span class="font-medium">View Responsibilities</span>
+                <i class="fas fa-chevron-down ml-2 text-sm"></i>
+              </button>
+            </div>
+            
+            <div class="responsibilities hidden space-y-3">
+              <ul class="space-y-3">
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Developed applications using Struts framework with JSP, HTML, CSS, and JavaScript</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Implemented Design Patterns like Singleton, Factory, and DAO patterns</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Developed UI using Swing, JSP, HTML, CSS, JavaScript, and jQuery</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Designed and developed XSL style sheets using XSLT to transform XML</span>
+                </li>
+                <li class="flex">
+                  <div class="text-accent mr-3 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <span>Used Build Management Tools Ant and Maven for writing build configurations</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Java</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">Struts</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">JSP</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">HTML/CSS</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">JavaScript</span>
+              <span class="skill-pill inline-block bg-gray-100 hover:bg-accent hover:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">XSLT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- Education -->
     <section class="mb-12 animate-slide-up">
@@ -650,6 +831,22 @@
         document.getElementById('certificateModal').classList.add('hidden');
         document.body.style.overflow = '';
       }
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.toggle-responsibilities').forEach(button => {
+      button.addEventListener('click', function() {
+        const responsibilities = this.closest('.p-6').querySelector('.responsibilities');
+        const icon = this.querySelector('i');
+        
+        responsibilities.classList.toggle('hidden');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+        
+        // Update button text
+        const span = this.querySelector('span');
+        span.textContent = responsibilities.classList.contains('hidden') ? 'View Responsibilities' : 'Hide Responsibilities';
+      });
     });
   </script>
 </body>
